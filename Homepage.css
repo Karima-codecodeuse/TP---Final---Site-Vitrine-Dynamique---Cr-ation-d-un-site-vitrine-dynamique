@@ -1,0 +1,181 @@
+body {
+    background-color: rgb(42, 42, 42);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: transparent;
+    font-family: roboto;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.navbar a:hover, .dropdown:hover
+.dropbtn, .dropbtn:focus {
+    background: linear-gradient(to right, rgb(95, 124, 220), rgb(139, 36, 117));
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+.show {
+    display: block;
+}
+
+.colortext {
+    color: white;
+    font-family: roboto;
+    font-size: 2rem;
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.container2{
+    right: 10px;
+    position: absolute;
+}
+
+
+
+
+
+.text {
+    font-size: 4.5rem;
+    letter-spacing: 10px;
+    font-family: roboto;
+    color: rgb(255, 255, 255);
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 76%;
+    animation:
+    typing 4s,
+    cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+
+.title {
+    font-size: 200%;
+    font-weight: 900;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right, rgb(95, 124, 220), rgb(139, 36, 117));
+    color: transparent;
+    -webkit-background-clip: text;
+    font-family: roboto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h2 {
+    text-align: center;
+    color: white;
+    font-family: roboto;
+}
+
+h1 {
+    text-align: center;
+    font-family: roboto;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    font-family: roboto;
+    color: white;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(95, 124, 220), rgb(139, 36, 117));
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
